@@ -22,6 +22,8 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="menu_logout">Log Out</string>
+    <string name="pop_description">Description</string>
+    <string name="pop_title">Title</string>
 
 
 </resources>
