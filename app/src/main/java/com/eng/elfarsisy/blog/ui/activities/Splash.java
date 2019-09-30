@@ -22,7 +22,7 @@ public class Splash extends AppCompatActivity {
             @Override
             public void run() {
                 if (firebaseAuth.getCurrentUser() != null) {
-                    startActivity(new Intent(Splash.this, HomeHomeActivity.class));
+                    startActivity(new Intent(Splash.this, HomeActivity.class));
                 } else {
                     startActivity(new Intent(Splash.this, LogIn.class));}
                 }

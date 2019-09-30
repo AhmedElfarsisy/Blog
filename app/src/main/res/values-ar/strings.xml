@@ -8,14 +8,5 @@
     <string name="regbtn">انشاء حساب</string>
     <string name="loginbtn">تسجيل الدخول</string>
     <string name="movetosignup">اضغط الصورة للانتقال الى انشاء حساب</string>
-    <string name="action_settings">الضبط</string>
-    <string name="menu_gallery">المعرض</string>
-    <string name="menu_home">الرئيسية</string>
-    <string name="menu_logout">"تسجيل الدخول "</string>
-    <string name="menu_send">ارسال</string>
-    <string name="menu_share">مشاركه</string>
-    <string name="menu_slideshow">عرض متتابع</string>
-    <string name="menu_tools">الأدوات</string>
-    <string name="title_activity_home">الرئيسية</string>
-    <string name="title_activity_home_home">الرئيسية</string>
+
 </resources>

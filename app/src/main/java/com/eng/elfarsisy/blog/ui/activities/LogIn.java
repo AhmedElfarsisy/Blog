@@ -50,7 +50,7 @@ public class LogIn extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.imageView:
-                startActivity(new Intent(LogIn.this, MainActivity.class));
+                startActivity(new Intent(LogIn.this, Register.class));
                 break;
             case R.id.logInButton:
                 logInButton.setVisibility(View.INVISIBLE);
@@ -74,7 +74,7 @@ public class LogIn extends AppCompatActivity {
                     logInButton.setVisibility(View.INVISIBLE);
                     progressBar.setVisibility(View.INVISIBLE);
                     //go to mainactivity
-                    startActivity(new Intent(LogIn.this, HomeHomeActivity.class));
+                    startActivity(new Intent(LogIn.this, HomeActivity.class));
                 } else {
                     Toast.makeText(LogIn.this,
                             "fail"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();

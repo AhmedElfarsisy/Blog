@@ -7,9 +7,11 @@
     <string name="email">Email</string>
     <string name="loginbtn">Log In</string>
     <string name="movetosignup">click in image to sign up</string>
-    <string name="title_activity_home_home">Home</string>
+    <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
     <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
     <string name="nav_header_desc" translatable="false">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -19,8 +21,7 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
-    <string name="menu_logout">logout</string>
-    <string name="title_activity_home">home</string>
+    <string name="menu_logout">Log Out</string>
 
 
 </resources>
