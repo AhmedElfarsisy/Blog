@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.PostDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/post_detail_photo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
+
+        <TextView
+            android:id="@+id/post_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:text="Title of post" />
+
+        <View
+            android:id="@+id/view"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/post_detail_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                tools:text="1st Oct 2019 3:02" />
+
+            <ImageView
+                android:id="@+id/Post_detail_publisherphoto"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/circle_image"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/post_detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:lineSpacingExtra="4dp"
+            android:textSize="22sp"
+            tools:text="hi this is our post description come here again can make you post here and we show details " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/post_detail_profile_photo"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/circle_image"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_editxt_style"
+                android:ems="10"
+                android:hint="Add comment"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/post_detail_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/btnstyle"
+                android:text="add" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

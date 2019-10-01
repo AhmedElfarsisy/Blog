@@ -1,6 +1,7 @@
 package com.eng.elfarsisy.blog.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.eng.elfarsisy.blog.R;
 import com.eng.elfarsisy.blog.data.Post;
+import com.eng.elfarsisy.blog.ui.activities.HomeActivity;
+import com.eng.elfarsisy.blog.ui.activities.PostDetailActivity;
 
 import java.util.List;
 
@@ -63,6 +66,27 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
             title = itemView.findViewById(R.id.show_post_title);
             profileImage = itemView.findViewById(R.id.show_posts_profile_image);
             postPhoto = itemView.findViewById(R.id.show_post_image);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent detailIntent = new Intent(mContext, PostDetailActivity.class);
+                    int postion = getAdapterPosition();
+
+                    detailIntent.putExtra("title", mData.get(postion).getTitle());
+                    detailIntent.putExtra("description", mData.get(postion).getDescription());
+                    detailIntent.putExtra("postphoto", mData.get(postion).getPicture());
+
+                    detailIntent.putExtra("publisherPhoto", mData.get(postion).getUserPhoto());
+
+
+                    long timestamp = (long) mData.get(postion).getTimeStamp();
+                    detailIntent.putExtra("postDate", timestamp);
+                    mContext.startActivity(detailIntent);
+
+                }
+            });
+
 
         }
     }
