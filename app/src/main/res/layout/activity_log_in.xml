@@ -9,20 +9,20 @@
     tools:context=".ui.activities.LogIn">
 
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        app:srcCompat="@drawable/userphoto" />
+        android:src="@drawable/userphoto" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/movetosignup"
         android:gravity="center"
-        android:textSize="16dp"
+        android:text="@string/movetosignup"
         android:textColor="@color/colorPrimaryDark"
-        />
+        android:textSize="16dp" />
 
     <EditText
         android:id="@+id/logInEmail"

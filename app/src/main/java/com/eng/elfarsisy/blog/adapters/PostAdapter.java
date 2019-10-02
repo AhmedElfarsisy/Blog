@@ -78,7 +78,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder> 
                     detailIntent.putExtra("postphoto", mData.get(postion).getPicture());
 
                     detailIntent.putExtra("publisherPhoto", mData.get(postion).getUserPhoto());
-
+                    detailIntent.putExtra("postKey", mData.get(postion).getPostKey());
 
                     long timestamp = (long) mData.get(postion).getTimeStamp();
                     detailIntent.putExtra("postDate", timestamp);

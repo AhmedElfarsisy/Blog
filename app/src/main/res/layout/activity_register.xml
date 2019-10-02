@@ -8,14 +8,14 @@
     android:orientation="vertical"
     tools:context=".ui.activities.Register">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/addphoto_imageV"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_gravity="center"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@drawable/userphoto" />
+        android:src="@drawable/userphoto" />
 
     <EditText
         android:id="@+id/regName"

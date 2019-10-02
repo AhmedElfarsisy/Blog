@@ -75,6 +75,7 @@ public class LogIn extends AppCompatActivity {
                     progressBar.setVisibility(View.INVISIBLE);
                     //go to mainactivity
                     startActivity(new Intent(LogIn.this, HomeActivity.class));
+                    finish();
                 } else {
                     Toast.makeText(LogIn.this,
                             "fail"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();

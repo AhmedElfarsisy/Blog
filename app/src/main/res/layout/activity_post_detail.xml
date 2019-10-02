@@ -54,11 +54,10 @@
                 android:layout_marginRight="16dp"
                 tools:text="1st Oct 2019 3:02" />
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/Post_detail_publisherphoto"
                 android:layout_width="56dp"
                 android:layout_height="56dp"
-                android:background="@drawable/circle_image"
                 tools:srcCompat="@tools:sample/avatars" />
 
 
@@ -81,17 +80,16 @@
             android:layout_marginTop="16dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/post_detail_profile_photo"
                 android:layout_width="56dp"
                 android:layout_height="56dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="4dp"
-                android:background="@drawable/circle_image"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="16dp"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/post_detail_commenttxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
@@ -104,13 +102,18 @@
 
             <Button
                 android:id="@+id/post_detail_add"
-                android:layout_width="wrap_content"
+                android:layout_width="64dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="16dp"
                 android:background="@drawable/btnstyle"
                 android:text="add" />
         </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commntRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
 
     </LinearLayout>
