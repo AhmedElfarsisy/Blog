@@ -30,16 +30,20 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
                 android:background="@color/white"
-                tools:text="ahmed elfarsisy" />
+                android:textColor="@color/black"
+                tools:text="ahmed elfarsisy"
+
+                />
 
             <TextView
                 android:id="@+id/comment_data"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="100dp"
                 android:background="@color/white"
+                android:textColor="@color/black"
                 tools:text="ahmed elfarsisy"
 
                 >
@@ -51,14 +55,14 @@
         <TextView
 
             android:id="@+id/comment_content"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="4dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-
             android:background="@drawable/edittext_style"
+            android:textColor="@color/black"
             android:textSize="16sp"
             tools:text="HAHAHA" />
     </LinearLayout>

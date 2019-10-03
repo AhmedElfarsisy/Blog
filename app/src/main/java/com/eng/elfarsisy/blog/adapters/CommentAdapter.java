@@ -63,7 +63,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentV
             publishername = itemView.findViewById(R.id.comment_user_name);
             commentTxt = itemView.findViewById(R.id.comment_content);
             commentImage = itemView.findViewById(R.id.comment_user_photo);
-            commentdata=itemView.findViewById(R.id.comment_data);
+            commentdata = itemView.findViewById(R.id.comment_data);
         }
 
 
@@ -71,7 +71,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentV
 
             Calendar calendar = Calendar.getInstance(Locale.ENGLISH);
             calendar.setTimeInMillis(postDate);
-            String date = DateFormat.format("hh:mm", calendar).toString();
+            String date = DateFormat.format("dd-MM-yyy ,hh:mm", calendar).toString();
 
 
             return date;

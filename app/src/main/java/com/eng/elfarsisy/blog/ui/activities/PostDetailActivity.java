@@ -75,11 +75,11 @@ public class PostDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_post_detail);
         ButterKnife.bind(this);
         firebaseAuth = FirebaseAuth.getInstance();
-        firebaseDatabase=FirebaseDatabase.getInstance();
+        firebaseDatabase = FirebaseDatabase.getInstance();
         currentUser = firebaseAuth.getCurrentUser();
         Window window = getWindow();
-        window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         getSupportActionBar().hide();
+
         commentrecycler = findViewById(R.id.commntRecycler);
 
         String postphto = getIntent().getExtras().getString("postphoto");
@@ -138,7 +138,7 @@ public class PostDetailActivity extends AppCompatActivity {
 
         Calendar calendar = Calendar.getInstance(Locale.ENGLISH);
         calendar.setTimeInMillis(postDate);
-        String date = DateFormat.format("dd-MM-yyy", calendar).toString();
+        String date = DateFormat.format("dd-MM-yyy ,hh:mm", calendar).toString();
 
 
         return date;

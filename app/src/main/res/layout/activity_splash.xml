@@ -4,21 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
-    android:orientation="vertical"
     android:layout_gravity="center"
+    android:background="#fff"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".ui.activities.Splash">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blogger"
+        android:layout_marginBottom="8dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/paulo"
-        android:textSize="48sp"
         android:gravity="center"
         android:text="Blog"
         android:textColor="@color/colorPrimary"
-
-        />
+        android:textSize="64sp" />
 
 </LinearLayout>

@@ -6,13 +6,7 @@ public class Post {
     private String title ;
     private String description;
 
-    public String getPostKey() {
-        return postKey;
-    }
 
-    public void setPostKey(String postKey) {
-        this.postKey = postKey;
-    }
 
     private String postKey;
 
@@ -24,22 +18,31 @@ public class Post {
     public Post() {
     }
 
-    public String getDescription() {
-        return description;
-    }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
     public Post(String title, String description , String picture, String userId, String userPhoto) {
         this.title = title;
+        this.description=description;
         this.picture = picture;
         this.userId = userId;
         this.userPhoto = userPhoto;
         this.timeStamp = timeStamp;
     }
 
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getPostKey() {
+        return postKey;
+    }
+
+    public void setPostKey(String postKey) {
+        this.postKey = postKey;
+    }
     public String getTitle() {
         return title;
     }
